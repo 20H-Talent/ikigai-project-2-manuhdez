@@ -17,6 +17,7 @@ body {
   color: #aaa;
   font-size: 1.05rem;
   line-height: 1.5;
+  display: block;
 }
 
 /* Navigation style */
@@ -90,8 +91,7 @@ header img {
 }
 
 .portfolio__item {
-  margin-top: 30px;
-  padding: 0 15px;
+  padding: 0 15px 15px 15px;
   box-sizing: border-box;
 }
 
@@ -219,6 +219,8 @@ header img {
 .portfolio__item {
   display: inline-block;
   padding: 0;
+  vertical-align: top;
+  margin-bottom: 35px;
   width: 45%;
   box-sizing: border-box;
 }
@@ -307,12 +309,14 @@ footer ul li a {
 
   #portfolio {
     width: 95%;
-    display: block;
     margin: 0 auto;
   }
 
   .portfolio__item {
     width: 30%;
+    margin-top: 0;
+    box-sizing: border-box;
+    padding-bottom: 20px;
   }
 
   .portfolio__item:nth-child(even) {
