@@ -50,7 +50,7 @@ nav ul li:nth-child(2) {
 
 nav ul li a{
   text-decoration: none;
-  color: black;
+  color: rgba(0,0,0,.5);
   display: block;
   width: 100%;
   font-size: 1.125rem;
@@ -176,15 +176,25 @@ nav ul {
 nav ul li {
   display: inline;
   background: none;
+  border-radius: 0;
+  padding-bottom: 5px;
 }
 
 nav ul li:nth-child(2) {
   margin: 0 20px;
 }
 
+ul li:hover {
+  border-bottom: 2px solid rgba(0,0,0,.5);
+}
+
 nav ul li a{
   font-size: 0.8rem;
   display: inherit;
+}
+
+ul li a:hover {
+  color: rgb(0,0,0);
 }
 
 /* Header style */
@@ -223,10 +233,28 @@ header img {
   margin-bottom: 35px;
   width: 45%;
   box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,.1);
+  box-shadow: 0 0 15px rgba(0,0,0,.3);
+  transition: all ease-in-out .3s;
+}
+
+.portfolio__item img {
+  border-radius: 5px 5px 0 0;
+}
+
+.portfolio__item p {
+  width: 90%;
+  margin: 0 auto 10px auto;
 }
 
 .portfolio__item:nth-child(even) {
   margin-right: 25px;
+}
+
+.portfolio__item:hover {
+  box-shadow: 0 0 25px rgba(0,0,0,.1);
+  transform: scale(1.03);
 }
 
 /* Contact style */
@@ -253,6 +281,8 @@ footer ul {
 
 footer ul li {
   display: inline-block;
+  border-bottom: 2px solid #f8f8f8;
+  padding-bottom: 5px;
 }
 
 footer ul li:nth-child(2) {
@@ -262,7 +292,7 @@ footer ul li:nth-child(2) {
 footer ul li a {
   display: inline-block;
   text-decoration: none;
-  color: #000;
+  color: rgba(0,0,0,.5);
 }
 
 
