@@ -128,3 +128,19 @@ footer p {
 footer a {
   float: right;
 }
+
+/*
+  Tablet style 768px
+*/
+
+@media (min-width: 768px) {
+
+}
+
+/*
+  Desktop style 1024px
+*/
+
+@media (min-width: 1024px) {
+
+}
